@@ -83,6 +83,31 @@ Compararemos salidas, cuantos tokens consumen cada peticion y tambien cuanto tie
 
 - EMbeddings: tenemos PDF grandote y usuario hace consulta. Tenemsoq ue de alguna maner pasar unicamente los chunks relevcantes o significativos. Entonces debemos tener un mecanismo para poder hacer comparaciones., Esas comparaciones no van a ser a travez de texot sino valores numericos, mas expecicamente, vectores. Para eso existen los embeddings. eSTO es una representacion vectorial. No importa la longitud de kla cadena de texto que envie, el punto es que se genera vectores y eso se hace porque eventualmente vamosa  comparar vectores contra el vector de la consulta. Por una texnica que se llama similitud coseno y si eso es cercano a 1 quiere decir que la consulta y el chunk o documento hablan de temas parecidos, es decir, el documento es relevante para la pregunta. O si es cercano a cero que no habnlan del mismo tema. Vector captura significado semantico de ese texto.
 Puedo definri que chunks se acercan a mi consulkta a traves de los embeddings.
+Medicion de similitud semantica con la similitud coseno o distancia euclidiana, esto es el proposito de los embeddings.
 
 ## Reto 04
+Indexar informacion y alamcenarla es un mecanismo de almacenamiento. Pero podremos hacer busquedas indexadas que nos daran un score de relevancia. Imagineses que tienen 10k documentos od atos sobre restaurante de diferente tipos o cocinas y usuario dice quiero comer una pizza entonces con AISearch podemos obtener los restaurantes que en su description tengan asociado el termino pizza. Para eso creamos recurso.
+
+1. En Azure buscar Ai Search, damos click en crear, seleccionamos mismo gtrupo de recursos creado para azureopenai. USar EastUS. En nivel de tarifa colocar basico. En Azure todo se cobra por hora. Se cobra 0.11 dolares por hora activo el recurso. 80/30/24 Es una especie de almancenamiento y permite busquedas indexadas. En overview obtenemos la url de openaisearch
+
+2. En secciones de key usar primary key y colocar la llave en el .env
+
+3. En nombre poner un nombre propio
+
+
+Dato estructurado es algo con columnas algo tabular
+
+Dato no estructurado un PDF
+
+Cuando no tenemos datos estructurados lo primero es hacerlos estructrado para eso es azure document inteligence que anteriormente era form recognizer
+
+Para crear document intelligence seguimos los iguienbtes pasos: Buscamos Azure AI services | Document Intelluigence (Antes era form recognizer)
+
+1. Damos crear, usar East US
+2. Princing usar Estandar S0
+3. Le damos crear
+4. Agregamos key y endpoint al archivo .env
+
+
 ## Reto 05
+Se verifican las salidas para revisar si ese contenido potencial son seguros. No te debe dar informacion sobre como construir una bomba.
