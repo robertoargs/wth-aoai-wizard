@@ -29,3 +29,19 @@
   - `text-generation`
 - **¿Cómo recuperar embeddings?**
   - Usando la API de `text-analytics`.
+
+## Reto 03
+- **¿Por qué es importante la fundamentación y cómo puedes fundamentar un modelo LLM?**
+  - Porque ayuda a entender cómo funciona el modelo y cómo se puede mejorar.
+- **¿Qué es un límite de tokens?**
+  - Es el número máximo de tokens que se pueden usar en un prompt.
+- **¿Cómo puedes manejar los límites de tokens?**
+  - Usando la técnica de `prompt engineering`.
+- **¿Cuáles son las técnicas de segmentación?**
+  - `windowing`
+  - `sliding window`
+  - `prompt engineering`
+- **¿Qué ayudan a lograr los embeddings?**
+  - A entender cómo se relacionan las palabras en un texto.
+
+# Apuntes
