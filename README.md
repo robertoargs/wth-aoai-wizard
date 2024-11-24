@@ -1,5 +1,5 @@
 # What The Hack - Fundamentos de Azure OpenAI - Recursos para Estudiantes
-Este repositorio contiene todos los recursos para estudiantes necesarios para el What The Hack de Fundamentos de Azure OpenAI.
+Este repositorio contiene todos los recursos para estudiantes necesarios para el What The Hack de Fundamentos de Azure OpenAI. 
 
 Los estudiantes deben seguir las instrucciones en la guía para estudiantes de este reto aquí:
 - [Guía para Estudiantes de What The Hack Fundamentos de Azure OpenAI](https://whatthehack-cf.github.io/WhatTheHack_retos/AzureOpenAI/)
